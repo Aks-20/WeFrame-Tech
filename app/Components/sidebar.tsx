@@ -1,4 +1,4 @@
-import { Home, CheckSquare, Users, Settings, Package, Target, FileText } from "lucide-react";
+import { Home, CheckSquare, Users, Settings, Package, Target, FileText,LogOutIcon } from "lucide-react";
 import { cn } from "../../lib/utils";
 
 const menuItems = [
@@ -33,7 +33,21 @@ const Sidebar = () => {
           </div>
         ))}
       </nav>
+
+      
+
+
+  {/* Logout footer at bottom */}
+  <footer className="p-4 border-t border-gray-700 mt-40 ">
+    <div className="flex items-center space-x-2 cursor-pointer hover:text-red-400">
+      <LogOutIcon />
+      <span>Logout</span>
     </div>
+  </footer>
+</div>
+
+
+  
   );
 };
 

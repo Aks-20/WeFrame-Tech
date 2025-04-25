@@ -5,6 +5,7 @@ import StatsCard from "./Components/statcard";
 import TaskList from "./Components/tasklist";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PendingQuestions from "./Components/pendingQuestion";
+import ChatAssistant from "./Components/ChatAssistant"; // Ensure this points to the correct React component file
 
 const Index = () => {
   return (
@@ -61,14 +62,23 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <PendingQuestions
-               
                 title="Pending Questions"
-                value="5"
-                subtitle="Pending Questions" questions={[]}              />
+                questions={[]} subtitle={""} value={""} />
             </CardContent>
           </Card>
-
-
+          <Card className="col-span-1">
+  <CardHeader>
+    <CardTitle>AI Assistant</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <ChatAssistant
+      title="Chat Assistant"
+      value="5"
+      subtitle="Ask me anything"
+      questions={[]}
+    />
+  </CardContent>
+</Card>
 
 
 
