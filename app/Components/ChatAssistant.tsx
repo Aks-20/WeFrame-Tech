@@ -9,7 +9,7 @@ interface ChatAssistantProps {
 }
 
 const ChatAssistant: React.FC<ChatAssistantProps> = ({ 
-  title = "Welcome to the AI Chat Assistant"
+  
 }) => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState<{
