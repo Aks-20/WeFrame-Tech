@@ -5,7 +5,8 @@ import StatsCard from "./Components/statcard";
 import TaskList from "./Components/tasklist";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PendingQuestions from "./Components/pendingQuestion";
-import ChatAssistant from "./Components/ChatAssistant"; // Ensure this points to the correct React component file
+import ChatAssistant from "./Components/ChatAssistant";
+// Ensure this points to the correct React component file
 
 const Index = () => {
   return (
@@ -36,10 +37,12 @@ const Index = () => {
               <CardTitle>Key Insights & Feedback</CardTitle>
             </CardHeader>
             <CardContent>
-              <StatsCard
-                title="Sales Growth"
-                value="10%"
-                subtitle="Top Performer"
+              <PendingQuestions
+                title="Pending Questions"
+                questions={[]}
+                subtitle="Pending Questions"
+                value="5"
+                
               />
             </CardContent>
           </Card>
