@@ -5,7 +5,8 @@ interface ChatAssistantProps {
   title?: string;
   value?: string;
   subtitle?: string;
-  questions?: any[];
+  questions?: Array<{ id: string; text: string }>;
+
 }
 
 const ChatAssistant: React.FC<ChatAssistantProps> = ({ 
