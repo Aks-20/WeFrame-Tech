@@ -19,9 +19,7 @@ const Sidebar = () => {
       
       {/* Top section */}
       <div>
-        <div className="mb-8">
-          <h2 className="text-xl font-bold px-4">Dashboard</h2>
-        </div>
+      
         <nav>
           {menuItems.map((item, index) => (
             <div
