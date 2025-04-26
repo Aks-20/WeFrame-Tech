@@ -1,8 +1,7 @@
 import React from "react";
 import Sidebar from "./Components/sidebar";
 import ProgressCircle from "./Components/progresscircle";
-import StatsCard from "./Components/statcard";
-import TaskList from "./Components/tasklist";
+
 import FranchiseeCard from "./Components/franchisecard";
 import ChatAssistant from "./Components/ChatAssistant";
 import Questions, { sampleQuestions } from "./Components/questions";
